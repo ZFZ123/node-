@@ -1,43 +1,4 @@
-// /**
-//  * Created by fangzhou.zhu on 2018/4/9.
-//  */
-// var fs = require('fs');
- var http = require('http');
-// var superagent = require('superagent');
-// var cheerio = require('cheerio');
-// var url = 'http://image.baidu.com/';
-// http.get(url,function (res) {
-//     var data = '';
-//     res.on('data', function(chunk) {
-//         data+=chunk;
-//     })
-//     res.on('end',function(){
-//         // console.log(data);
-//         filter(data)
-//     })
-// });
-// var writeStream = fs.createWriteStream('project.json');
-// // superagent.get(url).end(function (err,res) {
-// //     filter(res);
-// //     console.log(res)
-// //
-// // })
-// function filter(data){
-//     //保存搜索量前10的综艺节目标题
-//     var result = [];
-//     //将页面源代码转换为$对象
-//     var $ = cheerio.load(data);
-//     //查找每个综艺节目标题的外层div
-//     var temp_arr = $('.imgitem img')
-//     //将综艺节目标题依次保存到结果数组中
-//     temp_arr.each(function(index,item){
-//         console.log(item)
-//         result.push(item.attr("src"));
-//     })
-//     console.log(result);
-//     writeStream.write(JSON.stringify(result),'UTF8');
-//     writeStream.end();
-// }
+    
 //依赖模块
 var fs = require('fs');
 var request = require("request");
